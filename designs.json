@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Elegant Summer Dress",
+    "category": "Dresses",
+    "image": "https://via.placeholder.com/400x500?text=Elegant+Summer+Dress",
+    "description": "A light and airy summer dress perfect for warm weather",
+    "color": "Sky Blue",
+    "material": "Cotton Blend",
+    "season": "Summer"
+  },
+  {
+    "id": 2,
+    "name": "Classic Blazer",
+    "category": "Jackets",
+    "image": "https://via.placeholder.com/400x500?text=Classic+Blazer",
+    "description": "Timeless blazer that works for any occasion",
+    "color": "Black",
+    "material": "Wool",
+    "season": "All"
+  },
+  {
+    "id": 3,
+    "name": "Floral Evening Gown",
+    "category": "Gowns",
+    "image": "https://via.placeholder.com/400x500?text=Floral+Evening+Gown",
+    "description": "Stunning evening gown with floral details",
+    "color": "Burgundy",
+    "material": "Silk",
+    "season": "Winter"
+  },
+  {
+    "id": 4,
+    "name": "Casual Weekend Jeans",
+    "category": "Bottoms",
+    "image": "https://via.placeholder.com/400x500?text=Weekend+Jeans",
+    "description": "Comfortable and stylish jeans for everyday wear",
+    "color": "Indigo",
+    "material": "Denim",
+    "season": "All"
+  },
+  {
+    "id": 5,
+    "name": "Modern Minimalist Top",
+    "category": "Tops",
+    "image": "https://via.placeholder.com/400x500?text=Minimalist+Top",
+    "description": "Clean lines and simple elegance",
+    "color": "White",
+    "material": "Linen",
+    "season": "Spring"
+  },
+  {
+    "id": 6,
+    "name": "Vintage-Inspired Skirt",
+    "category": "Skirts",
+    "image": "https://via.placeholder.com/400x500?text=Vintage+Skirt",
+    "description": "Retro design with modern comfort",
+    "color": "Crimson",
+    "material": "Cotton",
+    "season": "Fall"
+  },
+  {
+    "id": 7,
+    "name": "Ravita Latest Design",
+    "category": "Dresses",
+    "image": "https://www.google.com/search?q=latest+birthday+dress+for+women&oq=latest+birth++dress&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCQgFEAAYDRiABDIJCAYQABgNGIAEMggIBxAAGA0YHjIICAgQABgNGB4yCAgJEAAYDRge0gEKMTcyNzJqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8#sv=CAYSjAISABosMmFoVUtFd2pLc2JxM2dLLVVBeFZwUzJ3R0hXRHZGckFRZ2kxNkJBZzBFQkEiqAEKDzk2MDA4MTY0MjIzOTE2ORoTOTA5NDcwMTU3ODkzMjEwOTA1MCITOTA5NDcwMTU3ODkzMjEwOTA1MEoBYVIAoAET6gFbUEFUTEFOSSBXb21lbidzIFBvbHllc3RlciBNb25vIE5ldCBFbWJyb2lkZXJlZCBXaW5lIFNlbWkgU3RpdGNoIEdvd24gKFBMLUNoYWluX1NlbWkgU3RpdGNoKfABAIICATAwAEItMmFoVUtFd2pLc2JxM2dLLVVBeFZwUzJ3R0hXRHZGckFRX01JRWVnUUlOQkFGILqvu4cLSggQAhgBIAEoAQ",
+    "description": "Ravita Latest Design",
+    "color": "Brown",
+    "material": "abc",
+    "season": "All"
+  }
+]

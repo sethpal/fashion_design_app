@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Fashion Designer Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/admin.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>✨ Fashion Designs ✨</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#categories">Categories</a></li>
+                <li><a href="/admin" class="active">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Admin Panel - Manage Designs</h1>
+        
+        <section class="admin-section">
+            <h2>Add New Design</h2>
+            <form id="addDesignForm" class="design-form">
+                <div class="form-group">
+                    <label for="name">Design Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="Dresses">Dresses</option>
+                        <option value="Jackets">Jackets</option>
+                        <option value="Gowns">Gowns</option>
+                        <option value="Bottoms">Bottoms</option>
+                        <option value="Tops">Tops</option>
+                        <option value="Skirts">Skirts</option>
+                        <option value="Accessories">Accessories</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="image">Image URL:</label>
+                    <input type="url" id="image" name="image" placeholder="https://example.com/image.jpg" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="color">Color:</label>
+                    <input type="text" id="color" name="color" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="material">Material:</label>
+                    <input type="text" id="material" name="material" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="season">Season:</label>
+                    <select id="season" name="season" required>
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Winter">Winter</option>
+                        <option value="All">All</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Add Design</button>
+            </form>
+            <div id="formMessage"></div>
+        </section>
+
+        <section class="admin-section">
+            <h2>My Designs</h2>
+            <div id="designsList" class="designs-list"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Fashion Designer Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for editing designs -->
+    <div id="editModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Design</h2>
+            <form id="editDesignForm" class="design-form">
+                <input type="hidden" id="editId" name="id">
+                
+                <div class="form-group">
+                    <label for="editName">Design Name:</label>
+                    <input type="text" id="editName" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="editCategory">Category:</label>
+                    <select id="editCategory" name="category" required>
+                        <option value="Dresses">Dresses</option>
+                        <option value="Jackets">Jackets</option>
+                        <option value="Gowns">Gowns</option>
+                        <option value="Bottoms">Bottoms</option>
+                        <option value="Tops">Tops</option>
+                        <option value="Skirts">Skirts</option>
+                        <option value="Accessories">Accessories</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="editDescription">Description:</label>
+                    <textarea id="editDescription" name="description" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="editImage">Image URL:</label>
+                    <input type="url" id="editImage" name="image" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="editColor">Color:</label>
+                    <input type="text" id="editColor" name="color" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="editMaterial">Material:</label>
+                    <input type="text" id="editMaterial" name="material" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="editSeason">Season:</label>
+                    <select id="editSeason" name="season" required>
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Winter">Winter</option>
+                        <option value="All">All</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

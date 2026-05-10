@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= category %> - Fashion Designer Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>✨ Fashion Designs ✨</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#categories">Categories</a></li>
+                <li><a href="/admin">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <a href="/" class="back-link">← Back to Home</a>
+        
+        <h1><%= category %> Collection</h1>
+        
+        <% if (designs.length === 0) { %>
+            <div class="no-designs">
+                <p>No designs found in this category.</p>
+                <a href="/" class="btn btn-primary">Browse All Designs</a>
+            </div>
+        <% } else { %>
+            <div class="designs-grid">
+                <% designs.forEach(design => { %>
+                    <div class="design-card">
+                        <div class="design-image">
+                            <img src="<%= design.image %>" alt="<%= design.name %>">
+                        </div>
+                        <div class="design-info">
+                            <h3><%= design.name %></h3>
+                            <p class="description"><%= design.description %></p>
+                            <div class="design-details">
+                                <span class="detail"><strong>Color:</strong> <%= design.color %></span>
+                                <span class="detail"><strong>Material:</strong> <%= design.material %></span>
+                            </div>
+                            <a href="/design/<%= design.id %>" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        <% } %>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Fashion Designer Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
